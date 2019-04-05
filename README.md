@@ -1,2 +1,0 @@
-# LovePercentCalculator
-Created with CodeSandbox

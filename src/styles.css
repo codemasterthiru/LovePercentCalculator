@@ -1,0 +1,40 @@
+.App {
+  font-family: sans-serif;
+  text-align: center;
+}
+h1 {
+  color: darkviolet;
+}
+h4 {
+  color: green;
+}
+
+/*
+Blink is used to set the css to blink tag.. Which has custom tags and css
+*/
+blink {
+  -webkit-animation: 2s linear infinite condemned_blink_effect; // for android
+  animation: 2s linear infinite condemned_blink_effect;
+}
+@-webkit-keyframes condemned_blink_effect {
+  0% {
+    visibility: hidden;
+  }
+  50% {
+    visibility: hidden;
+  }
+  100% {
+    visibility: visible;
+  }
+}
+@keyframes condemned_blink_effect {
+  0% {
+    visibility: hidden;
+  }
+  50% {
+    visibility: hidden;
+  }
+  100% {
+    visibility: visible;
+  }
+}
