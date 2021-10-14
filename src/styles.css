@@ -13,7 +13,7 @@ h4 {
 Blink is used to set the css to blink tag.. Which has custom tags and css
 */
 blink {
-  -webkit-animation: 2s linear infinite condemned_blink_effect; // for android
+  -webkit-animation: 2s linear infinite condemned_blink_effect;
   animation: 2s linear infinite condemned_blink_effect;
 }
 @-webkit-keyframes condemned_blink_effect {
