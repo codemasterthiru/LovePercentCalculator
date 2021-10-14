@@ -19,12 +19,12 @@ class LoveCalculator extends React.Component {
       response: container.response
     });
   }
-  handleSubmit = event => {
+  handleSubmit = (event) => {
     event.preventDefault();
     const yourName = event.target[0].value;
     const yourPartnerName = event.target[1].value;
-    this.state.name = yourName;
-    this.state.partnerName = yourPartnerName;
+    this.setState({ name: yourName });
+    this.setState({ partnerName: yourPartnerName });
     this.fetchData(this.state);
   };
   render() {
