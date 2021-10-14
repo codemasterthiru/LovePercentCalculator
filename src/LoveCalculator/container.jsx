@@ -7,12 +7,10 @@ class LoveMeter extends React.Component {
   componentWillMount() {
     this.response = {};
   }
-  urlConstructing = data => {
-    return `https://love-calculator.p.rapidapi.com/getPercentage?fname=${
-      data.name
-    }&sname=${data.partnerName}`;
+  urlConstructing = (data) => {
+    return `https://love-calculator.p.rapidapi.com/getPercentage?fname=${data.name}&sname=${data.partnerName}`;
   };
-  getCalculated = async data => {
+  getCalculated = async (data) => {
     const url = this.urlConstructing(data);
     const response = await fetch(url, {
       headers: {
@@ -20,11 +18,11 @@ class LoveMeter extends React.Component {
         "X-RapidAPI-Key": "39f62dbd37msh087bb563e886383p190e72jsnbfa63ff2c64b"
       }
     }).then(
-      function(response) {
+      function (response) {
         return response.json();
       },
-      function(error) {
-        error.message;
+      function (error) {
+        return error.message;
       }
     );
     this.response = response;
